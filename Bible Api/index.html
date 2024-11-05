@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="container">
+        <h1>Bible Verse</h1>
+        <form>
+            <label for="book">Book:</label>
+            <input type="text" id="book" name="book" required>
+
+            <label for="chapter">Chapter:</label>
+            <input type="number" id="chapter" name="chapter" required>
+
+            <label for="verse">Verse:</label>
+            <input type="number" id="verse" name="verse">
+
+            <button type="button" onclick="getVerse()">Get Verse</button>
+        </form>
+
+        <div id="translation">
+            <label for="translation">Translation:</label>
+            <select id="translation" name="translation">
+                <option name="KJV" value="KJV">KJV</option>
+                <!-- <option name="KJV" value="KJV">KJV</option> -->
+                <!--<option name="ESV" value="ESV">ESV</!--<option>
+                <option name="NLT" value="NLT">NLT</option> -->
+            </select>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
