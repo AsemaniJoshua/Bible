@@ -1,8 +1,8 @@
 async function getVerse(){
     
-    const book = document.getElementById("book").value.toLowerCase();
-    const chapter = document.getElementById("chapter").value;
-    const verse = document.getElementById("verse").value;
+    const book = document.getElementById("book").value.toLowerCase().trim();
+    const chapter = document.getElementById("chapter").value.trim();
+    const verse = document.getElementById("verse").value.trim();
     const translation = document.getElementById("translation").value;
 
     const br = document.createElement("br").innerHTML = "\n";
